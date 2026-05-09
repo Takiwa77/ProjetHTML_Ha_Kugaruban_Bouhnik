@@ -1,165 +1,100 @@
-# Projet Web TI402 – Site vitrine du Département Informatique EFREI
+PROJET WEB TI402
+Site vitrine du Département Informatique EFREI
 
-## Présentation du projet
+PRESENTATION DU PROJET
 
-Ce projet a été réalisé dans le cadre du module **Programmation Web TI402** à l’EFREI.
+Ce projet a été réalisé dans le cadre du module Programmation Web TI402 à l’EFREI.
 
-L’objectif est de concevoir un **site vitrine responsive et interactif** pour le département Informatique de l’EFREI en utilisant uniquement :
+L’objectif du projet est de concevoir un site vitrine responsive et interactif pour le département Informatique de l’EFREI.
 
-* HTML5
-* CSS3
-* JavaScript Vanilla
+Le site a été développé avec HTML5, CSS3 et JavaScript Vanilla.
 
+OBJECTIFS DU PROJET
 
+Le site permet de présenter le département Informatique de l’EFREI, les formations proposées, l’équipe enseignante, les événements, ainsi que des informations utiles pour les étudiants.
 
-# Objectifs du projet
+Il a aussi pour objectif d’offrir une navigation simple, claire, responsive et accessible sur ordinateur comme sur mobile.
 
-Le site a été conçu afin de :
+FONCTIONNALITES PRINCIPALES
 
-* Présenter le département Informatique de l’EFREI
-* Mettre en avant les formations et les cours proposés
-* Présenter l’équipe enseignante
-* Fournir des informations utiles aux étudiants
-* Offrir une navigation fluide et responsive
-* Ajouter des fonctionnalités interactives grâce au JavaScript
+Le site contient plusieurs pages HTML reliées entre elles.
 
+La page d’accueil présente le département Informatique et les informations principales.
 
-# Fonctionnalités principales
+La page formations présente les parcours, les cours et les matières proposées.
 
-## Navigation responsive
+La page enseignants présente les membres de l’équipe enseignante.
 
-* Barre de navigation présente sur toutes les pages
-* Menu responsive pour mobile
-* Navigation simple et intuitive
+La page événements présente les événements liés au département.
 
-## Page d’accueil
+La page vie étudiante donne des informations utiles aux étudiants.
 
-* Présentation du département
-* Bannière principale
-* Carrousel / sections dynamiques
-* Mise en avant des informations importantes
+La page contact permet de présenter les membres du groupe, la répartition du travail et un formulaire de contact.
 
-## Formations et cours
+FONCTIONNALITES JAVASCRIPT
 
-* Présentation des parcours
-* Informations sur les matières enseignées
-* Tableaux et contenus organisés
+Le JavaScript a été utilisé pour rendre le site plus interactif.
 
-## Équipe enseignante
+Il permet notamment de gérer le menu responsive, certaines animations, la validation du formulaire et les interactions avec l’utilisateur.
 
-* Présentation des enseignants
-* Cartes de profils
-* Informations de contact
+STRUCTURE DU PROJET
 
-## Page Contact / À propos
+Le projet est organisé en plusieurs dossiers.
 
-* Présentation des membres du groupe
-* Répartition du travail
-* Formulaire de contact
-* Informations complémentaires
+Le dossier Html contient les pages du site.
 
-## Fonctionnalités JavaScript
+Le dossier CSS contient le fichier style.css utilisé pour la mise en forme du site.
 
-* Menu interactif
-* Validation des formulaires
-* Animations dynamiques
-* Gestion des interactions utilisateur
-* Effets visuels et animations CSS/JS
+Le dossier js contient le fichier main.js utilisé pour les fonctionnalités interactives.
 
+Le dossier assets contient les images et les ressources utilisées dans le site.
 
-# Structure du projet
+TECHNOLOGIES UTILISEES
 
-```bash
-Projet-Web-TI402/
-│
-├── index.html
-├── formations.html
-├── enseignants.html
-├── contact.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-├── assets/
-│   ├── images/
-│   ├── logos/
-│   └── videos/
-│
-└── README.md
+HTML5 pour la structure des pages.
 
+CSS3 pour le design, la mise en page et le responsive.
 
-# Technologies utilisées
+JavaScript Vanilla pour l’interactivité du site.
 
-| Technologie | Rôle                               |
-| ----------- | ---------------------------------- |
-| HTML5       | Structure des pages                |
-| CSS3        | Mise en forme et responsive design |
-| JavaScript  | Interactivité et dynamisme         |
+VALIDATION ET QUALITE
+
+Le projet respecte les consignes données.
+
+Le code est organisé de manière claire.
+
+Les fichiers sont séparés correctement entre HTML, CSS, JavaScript et assets.
+
+Le site est responsive et peut être consulté sur ordinateur, tablette et téléphone.
+
+PROBLEMES RENCONTRES
+
+Le principal problème rencontré concerne les commits et l’envoi du projet sur GitHub.
+
+Lors du push, Git a affiché des erreurs liées aux branches et aux commits. Le problème venait notamment du fait que la branche locale n’était pas correctement synchronisée avec la branche distante du dépôt GitHub.
+
+Ce problème est visible sur l’image, où Git indique que le push a été rejeté et qu’il fallait d’abord récupérer les changements distants avant de pouvoir envoyer les modifications.
 
 
 
+REPARTITION DU TRAVAIL
 
-# Validation et qualité
+Mathieu Ha s’est occupé du développement HTML et JavaScript.
 
-Le projet respecte les consignes suivantes :
+Ashwin Kugaruban s’est occupé du développement HTML et CSS.
 
-* Pages compatibles HTML5
-* Utilisation du CSS3 moderne
-* Code structuré et lisible
-* Organisation claire des fichiers
-* Respect des bonnes pratiques web
-* Navigation accessible et intuitive
+Vincent Bouhnik s’est occupé du développement HTML et du README.
 
-# Installation et utilisation
+AMELIORATIONS POSSIBLES
 
-## 1. Cloner le projet
+Ajouter davantage d’animations pour améliorer l’expérience utilisateur.
 
-```bash
-git clone https://github.com/votre-utilisateur/projet-web-ti402.git
+Améliorer encore le responsive sur certains formats d’écran.
 
+Ajouter plus de contenu sur les formations et les enseignants.
 
+Améliorer le formulaire de contact avec une meilleure validation.
 
-# Maquette et conception
+Optimiser les images pour rendre le site plus rapide.
 
-Avant le développement, une maquette du site a été réalisée afin de :
-
-* Définir l’arborescence
-* Organiser les contenus
-* Concevoir l’interface utilisateur
-* Préparer la charte graphique
-
-Outils possibles :
-
-* Miro
-* Wireframe.cc
-* Figma
-
-
-# Répartition du travail
-
-## Membre 1 : Mathieu
-
-* Développement HTML/JAVASCRIPT
-
-
-## Membre 2 : Ashwin
-
-* Développement HTML/CSS
-
-
-## Membre 3 : Vincent
-
-* Développement HTML/README
-
-# Améliorations possibles
-
-?????
-
-
-# Auteur(s)
-
-Projet réalisé par Mathieu Ha, Ashwin Kugaruban et Vincent Bouhnik
-
+AUTEURS
