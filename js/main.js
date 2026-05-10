@@ -98,91 +98,43 @@ slides[i].style.display='block'
 ,3500)
 }
 
-// Carrousel enseignants
+// Carrousel enseignants simple : un clic sur les flèches change le professeur affiché.
 const teacherCarousel = $('.teacher-carousel');
 
 if (teacherCarousel) {
-    
-  const track = $('#teacherTrack');
-
   const teacherSlides = $$('.teacher-slide', teacherCarousel);
-
   const dotsBox = $('#teacherDots');
-
+  const teacherCount = $('#teacherCount');
   let teacherIndex = 0;
 
-  let teacherTimer;
-
-  const goTeacher = (index) => {
-    
+  const showTeacher = (index) => {
     teacherIndex = (index + teacherSlides.length) % teacherSlides.length;
 
-    track.style.transform = `translateX(-${
-    teacherIndex * 100
-}
-%)`;
+    teacherSlides.forEach((slide, n) => {
+      slide.classList.toggle('active', n === teacherIndex);
+    });
 
-    teacherSlides.forEach((slide, n) => slide.classList.toggle('active', n === teacherIndex));
+    $$('.carousel-dots button', teacherCarousel).forEach((dot, n) => {
+      dot.classList.toggle('active', n === teacherIndex);
+    });
 
-    $$('.carousel-dots button', teacherCarousel).forEach((dot, n) => dot.classList.toggle('active', n === teacherIndex));
-
-}
-;
+    if (teacherCount) {
+      teacherCount.textContent = `${teacherIndex + 1} / ${teacherSlides.length}`;
+    }
+  };
 
   teacherSlides.forEach((_, n) => {
-    
     const dot = document.createElement('button');
-
     dot.type = 'button';
+    dot.setAttribute('aria-label', `Afficher le professeur ${n + 1}`);
+    dot.addEventListener('click', () => showTeacher(n));
+    dotsBox?.appendChild(dot);
+  });
 
-    dot.setAttribute('aria-label', `Afficher l’enseignant ${
-    n + 1
-}
-`);
+  $('.carousel-btn.prev', teacherCarousel)?.addEventListener('click', () => showTeacher(teacherIndex - 1));
+  $('.carousel-btn.next', teacherCarousel)?.addEventListener('click', () => showTeacher(teacherIndex + 1));
 
-    dot.addEventListener('click', () => {
-     goTeacher(n);
- restartTeacher();
- 
-}
-);
-
-    dotsBox.appendChild(dot);
-
-}
-);
-
-  const restartTeacher = () => {
-    
-    clearInterval(teacherTimer);
-
-    teacherTimer = setInterval(() => goTeacher(teacherIndex + 1), 5000);
-
-}
-;
-
-  $('.carousel-btn.prev', teacherCarousel).addEventListener('click', () => {
-     goTeacher(teacherIndex - 1);
- restartTeacher();
- 
-}
-);
-
-  $('.carousel-btn.next', teacherCarousel).addEventListener('click', () => {
-     goTeacher(teacherIndex + 1);
- restartTeacher();
- 
-}
-);
-
-  teacherCarousel.addEventListener('mouseenter', () => clearInterval(teacherTimer));
-
-  teacherCarousel.addEventListener('mouseleave', restartTeacher);
-
-  goTeacher(0);
-
-  restartTeacher();
-
+  showTeacher(0);
 }
 
 // Emplois du temps dynamiques selon la catégorie de formation
