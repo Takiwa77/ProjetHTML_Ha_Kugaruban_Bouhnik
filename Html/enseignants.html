@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Enseignants - EFREI Informatique
+  </title>
+  <link href="../css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#contenu">
+   Aller au contenu
+  </a>
+  <header class="site-header">
+   <div class="container nav">
+    <a class="brand" href="index.html">
+     <img alt="Logo EFREI D&eacute;partement Informatique" src="../assets/site_efrei_ameliore/assets/img/logo-efrei.svg"/>
+    </a>
+    <button aria-controls="navLinks" aria-expanded="false" class="icon-btn menu-btn" id="menuBtn">
+     ☰
+    </button>
+    <ul class="nav-links" id="navLinks">
+     <li>
+      <a class="" href="index.html">
+       Accueil
+      </a>
+     </li>
+     <li>
+      <a class="" href="formations.html">
+       Formations
+      </a>
+     </li>
+     <li>
+      <a class="active" href="enseignants.html">
+       Enseignants
+      </a>
+     </li>
+     <li>
+      <a class="" href="vie-etudiante.html">
+       Vie &eacute;tudiante
+      </a>
+     </li>
+     <li>
+      <a class="" href="evenements.html">
+       &Eacute;v&eacute;nements
+      </a>
+     </li>
+     <li>
+      <a class="" href="contact.html">
+       Contact / &Agrave; propos
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Changer le th&egrave;me" class="icon-btn" id="themeBtn">
+     ☾
+    </button>
+   </div>
+  </header>
+  <main id="contenu">
+   <section class="hero">
+    <div class="container">
+     <span class="badge">
+      🧑‍🏫 Équipe
+     </span>
+     <h1>
+      Corps enseignant &amp; matières
+     </h1>
+     <p>
+      Découvrez les professeurs du département informatique, leurs spécialités et les matières qu’ils enseignent.
+     </p>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+     <h2 class="section-title">
+      Enseignants d’informatique
+     </h2>
+     <p class="section-lead">
+      Cliquez sur les flèches : chaque clic affiche un autre professeur avec sa matière principale et son rôle.
+     </p>
+     <div aria-label="Carrousel des enseignants" class="teacher-carousel reveal">
+      <button aria-label="Enseignant précédent" class="carousel-btn prev" type="button">
+       &lsaquo;
+      </button>
+      <div class="carousel-window">
+       <div class="carousel-track" id="teacherTrack">
+        <article class="teacher-slide active">
+         <div class="teacher-photo">
+          LAURENT
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Algorithmique
+          </span>
+          <h3>
+           Mme Laurent
+          </h3>
+          <p>
+           Responsable pédagogique, elle accompagne les étudiants sur les bases de l’algorithmique, la rigueur et la complexité.
+          </p>
+          <ul>
+           <li>Algorithmique</li>
+           <li>Structures de données</li>
+           <li>Complexité</li>
+          </ul>
+         </div>
+        </article>
+        <article class="teacher-slide">
+         <div class="teacher-photo">
+          BENALI
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Python &amp; IA
+          </span>
+          <h3>
+           M. Benali
+          </h3>
+          <p>
+           Il initie les étudiants à la programmation Python et aux premiers projets d’intelligence artificielle.
+          </p>
+          <ul>
+           <li>Python</li>
+           <li>IA générative</li>
+           <li>Mini-projets</li>
+          </ul>
+         </div>
+        </article>
+        <article class="teacher-slide">
+         <div class="teacher-photo">
+          CHEN
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Data &amp; SQL
+          </span>
+          <h3>
+           Mme Chen
+          </h3>
+          <p>
+           Elle encadre les bases de données, les requêtes SQL et les premiers tableaux de bord de données.
+          </p>
+          <ul>
+           <li>SQL</li>
+           <li>Bases de données</li>
+           <li>Data</li>
+          </ul>
+         </div>
+        </article>
+        <article class="teacher-slide">
+         <div class="teacher-photo">
+          GARCIA
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Web
+          </span>
+          <h3>
+           Mme Garcia
+          </h3>
+          <p>
+           Elle forme les étudiants au développement web, au responsive design et aux bonnes pratiques d’interface.
+          </p>
+          <ul>
+           <li>HTML/CSS</li>
+           <li>UX/UI</li>
+           <li>Accessibilité</li>
+          </ul>
+         </div>
+        </article>
+        <article class="teacher-slide">
+         <div class="teacher-photo">
+          LEROY
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Systèmes
+          </span>
+          <h3>
+           M. Leroy
+          </h3>
+          <p>
+           Il travaille sur le langage C, l’architecture des machines et la compréhension des systèmes.
+          </p>
+          <ul>
+           <li>Langage C</li>
+           <li>Systèmes</li>
+           <li>Architecture PC</li>
+          </ul>
+         </div>
+        </article>
+        <article class="teacher-slide">
+         <div class="teacher-photo">
+          RENAUD
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Cybersécurité
+          </span>
+          <h3>
+           M. Renaud
+          </h3>
+          <p>
+           Il anime les cours de réseaux, les ateliers de sécurité et les challenges CTF du département.
+          </p>
+          <ul>
+           <li>Réseaux</li>
+           <li>Cybersécurité</li>
+           <li>CTF</li>
+          </ul>
+         </div>
+        </article>
+        <article class="teacher-slide">
+         <div class="teacher-photo">
+          MOREAU
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Java &amp; logiciel
+          </span>
+          <h3>
+           M. Moreau
+          </h3>
+          <p>
+           Il accompagne les projets logiciels, la programmation orientée objet et l’architecture applicative.
+          </p>
+          <ul>
+           <li>Java</li>
+           <li>Architecture logicielle</li>
+           <li>Projet</li>
+          </ul>
+         </div>
+        </article>
+        <article class="teacher-slide">
+         <div class="teacher-photo">
+          MARTIN
+         </div>
+         <div class="teacher-info">
+          <span class="pill">
+           Projet &amp; pro
+          </span>
+          <h3>
+           Mme Martin
+          </h3>
+          <p>
+           Elle suit les projets d’équipe, la méthode agile et la préparation aux stages et à l’alternance.
+          </p>
+          <ul>
+           <li>Gestion de projet</li>
+           <li>Agile</li>
+           <li>Alternance</li>
+          </ul>
+         </div>
+        </article>
+       </div>
+      </div>
+      <button aria-label="Enseignant suivant" class="carousel-btn next" type="button">
+       &rsaquo;
+      </button>
+      <div aria-label="Navigation du carrousel" class="carousel-dots" id="teacherDots">
+      </div>
+      <div class="carousel-helper" aria-live="polite">
+       <span id="teacherCount">1 / 8</span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="teacher-subjects-section">
+    <div class="container">
+     <h2 class="section-title">
+      Professeurs et matières enseignées
+     </h2>
+     <p class="section-lead">
+      Cette section reprend le principe de l’emploi du temps : chaque matière est associée à un professeur pour mieux comprendre qui intervient dans le parcours informatique.
+     </p>
+     <div class="prof-grid">
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">ML</span><div><h3>Mme Laurent</h3><small>Responsable pédagogique</small></div></div>
+       <p>Algorithmique, structures de données, complexité.</p>
+       <div class="subject-tags"><span>Prépa</span><span>Cycle ingénieur</span></div>
+      </article>
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">AB</span><div><h3>M. Benali</h3><small>Programmation</small></div></div>
+       <p>Python, initiation IA, automatisation et mini-projets.</p>
+       <div class="subject-tags"><span>Python</span><span>IA</span></div>
+      </article>
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">LC</span><div><h3>Mme Chen</h3><small>Données</small></div></div>
+       <p>SQL, bases de données, data visualisation.</p>
+       <div class="subject-tags"><span>SQL</span><span>Data</span></div>
+      </article>
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">SG</span><div><h3>Mme Garcia</h3><small>Développement web</small></div></div>
+       <p>HTML/CSS, responsive design, UX/UI.</p>
+       <div class="subject-tags"><span>Web</span><span>Design</span></div>
+      </article>
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">PL</span><div><h3>M. Leroy</h3><small>Systèmes</small></div></div>
+       <p>Langage C, architecture PC, Linux.</p>
+       <div class="subject-tags"><span>C</span><span>Système</span></div>
+      </article>
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">NR</span><div><h3>M. Renaud</h3><small>Cybersécurité</small></div></div>
+       <p>Réseaux, cybersécurité, audit et challenges CTF.</p>
+       <div class="subject-tags"><span>Réseaux</span><span>Cyber</span></div>
+      </article>
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">JM</span><div><h3>M. Moreau</h3><small>Logiciel</small></div></div>
+       <p>Java, architecture logicielle, API et projets.</p>
+       <div class="subject-tags"><span>Java</span><span>Projet</span></div>
+      </article>
+      <article class="prof-card reveal">
+       <div class="prof-card-head"><span class="avatar">CM</span><div><h3>Mme Martin</h3><small>Professionnalisation</small></div></div>
+       <p>Gestion de projet, méthodes agiles, stages et alternance.</p>
+       <div class="subject-tags"><span>Agile</span><span>Pro</span></div>
+      </article>
+     </div>
+     <div class="table-wrap professor-table reveal">
+      <table>
+       <thead>
+        <tr>
+         <th>Professeur</th>
+         <th>Matières principales</th>
+         <th>Rôle dans les projets</th>
+         <th>Niveau concerné</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr><td>Mme Laurent</td><td>Algorithmique, structures de données, complexité</td><td>Conseils sur la logique et l’optimisation</td><td>Prépa / Ingénieur</td></tr>
+        <tr><td>M. Benali</td><td>Python, IA, scripts d’automatisation</td><td>Aide au prototypage</td><td>Prépa / Bachelor</td></tr>
+        <tr><td>Mme Chen</td><td>SQL, bases de données, data</td><td>Modélisation et requêtes</td><td>Bachelor / Ingénieur</td></tr>
+        <tr><td>Mme Garcia</td><td>HTML/CSS, interfaces web, responsive</td><td>Design et intégration</td><td>Prépa / Bachelor</td></tr>
+        <tr><td>M. Leroy</td><td>Langage C, systèmes, Linux</td><td>Compréhension technique bas niveau</td><td>Bachelor</td></tr>
+        <tr><td>M. Renaud</td><td>Réseaux, sécurité, CTF</td><td>Validation des bonnes pratiques sécurité</td><td>Bachelor / Ingénieur</td></tr>
+        <tr><td>M. Moreau</td><td>Java, architecture, API</td><td>Suivi des projets logiciels</td><td>Ingénieur</td></tr>
+        <tr><td>Mme Martin</td><td>Gestion de projet, agile, alternance</td><td>Organisation, sprint et présentation</td><td>Tous niveaux</td></tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+     <h2 class="section-title">
+      Axes de recherche
+     </h2>
+     <p class="section-lead">
+      Le département informatique travaille autour de thèmes concrets liés aux besoins actuels des entreprises : automatiser, sécuriser, analyser les données et concevoir des applications fiables. Ces axes servent aussi de base aux projets étudiants, aux ateliers et aux sujets de fin d’année.
+     </p>
+     <div class="grid">
+      <div class="card reveal research-card">
+       <h3>
+        IA &amp; données
+       </h3>
+       <p>
+        Création de modèles prédictifs, analyse de jeux de données, visualisation et réflexion sur l’éthique des algorithmes.
+       </p>
+       <small>
+        Exemple : prédire l’affluence d’un événement étudiant avec Python.
+       </small>
+      </div>
+      <div class="card reveal research-card">
+       <h3>
+        Cloud &amp; DevOps
+       </h3>
+       <p>
+        Déploiement d’applications, automatisation des tests, conteneurs, intégration continue et supervision de services.
+       </p>
+       <small>
+        Exemple : publier une API web avec une chaîne CI/CD simplifiée.
+       </small>
+      </div>
+      <div class="card reveal research-card">
+       <h3>
+        Cyberdéfense
+       </h3>
+       <p>
+        Analyse de risques, audit de sites web, protection des données, sensibilisation et exercices de type CTF.
+       </p>
+       <small>
+        Exemple : détecter et corriger une faille dans un formulaire.
+       </small>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-grid">
+    <div>
+     <img alt="Logo EFREI" src="../assets/site_efrei_ameliore/assets/img/logo-efrei.svg" style="width:150px"/>
+     <p>
+      Site vitrine &eacute;tudiant du d&eacute;partement Informatique.
+     </p>
+    </div>
+    <div>
+     <h3>
+      Navigation
+     </h3>
+     <a href="index.html">
+      Accueil
+     </a>
+     <a href="formations.html">
+      Formations
+     </a>
+     <a href="enseignants.html">
+      Enseignants
+     </a>
+     <a href="vie-etudiante.html">
+      Vie &eacute;tudiante
+     </a>
+     <a href="evenements.html">
+      &Eacute;v&eacute;nements
+     </a>
+     <a href="contact.html">
+      Contact / &Agrave; propos
+     </a>
+    </div>
+    <div>
+     <h3>
+      Projet TI402
+     </h3>
+     <p>
+      HTML5, CSS3, JavaScript vanilla, responsive, tableaux, formulaires et animations.
+     </p>
+    </div>
+    <div>
+     <h3>
+      Où nous trouver
+     </h3>
+     <div class="social-links">
+      <a href="https://www.instagram.com/efrei_paris/" target="_blank" rel="noopener">
+       <span>📸</span> Instagram
+      </a>
+      <a href="https://discord.gg/92BqbX7Q" target="_blank" rel="noopener">
+       <span>💬</span> Discord
+      </a>
+      <a href="https://www.linkedin.com/school/efrei/?originalSubdomain=fr" target="_blank" rel="noopener">
+       <span>💼</span> LinkedIn
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="../js/main.js">
+  </script>
+ </body>
+</html>
