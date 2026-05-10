@@ -98,3 +98,4 @@ Améliorer le formulaire de contact avec une meilleure validation.
 Optimiser les images pour rendre le site plus rapide.
 
 AUTEURS
+Ashwin Kugaruban Mathieu Ha Vincent Bouhnik
