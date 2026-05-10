@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Formations - EFREI Informatique
+  </title>
+  <link href="../css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#contenu">
+   Aller au contenu
+  </a>
+  <header class="site-header">
+   <div class="container nav">
+    <a class="brand" href="index.html">
+     <img alt="Logo EFREI D&eacute;partement Informatique" src="../assets/site_efrei_ameliore/assets/img/logo-efrei.svg"/>
+    </a>
+    <button aria-controls="navLinks" aria-expanded="false" class="icon-btn menu-btn" id="menuBtn">
+     ☰
+    </button>
+    <ul class="nav-links" id="navLinks">
+     <li>
+      <a class="" href="index.html">
+       Accueil
+      </a>
+     </li>
+     <li>
+      <a class="active" href="formations.html">
+       Formations
+      </a>
+     </li>
+     <li>
+      <a class="" href="enseignants.html">
+       Enseignants
+      </a>
+     </li>
+     <li>
+      <a class="" href="vie-etudiante.html">
+       Vie &eacute;tudiante
+      </a>
+     </li>
+     <li>
+      <a class="" href="evenements.html">
+       &Eacute;v&eacute;nements
+      </a>
+     </li>
+     <li>
+      <a class="" href="contact.html">
+       Contact / &Agrave; propos
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Changer le th&egrave;me" class="icon-btn" id="themeBtn">
+     ☾
+    </button>
+   </div>
+  </header>
+  <main id="contenu">
+   <section class="hero">
+    <div class="container">
+     <span class="badge">
+      🎓 Formations
+     </span>
+     <h1>
+      Cours et parcours informatiques
+     </h1>
+     <p>
+      Pr&eacute;sentation des cycles, mati&egrave;res et d&eacute;bouch&eacute;s.
+     </p>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+     <div class="filters" id="formationFilters">
+      <button class="filter active" data-filter="all">
+       Tous
+      </button>
+      <button class="filter" data-filter="prepa">
+       Pr&eacute;pa
+      </button>
+      <button class="filter" data-filter="bachelor">
+       Bachelor
+      </button>
+      <button class="filter" data-filter="ingenieur">
+       Cycle ing&eacute;nieur
+      </button>
+      <button class="filter" data-filter="metiers">
+       D&eacute;bouch&eacute;s
+      </button>
+     </div>
+     <div class="grid">
+      <article class="card reveal" data-category="prepa">
+       <span class="pill">
+        Fondations
+       </span>
+       <h3>
+        Pr&eacute;pa num&eacute;rique
+       </h3>
+       <p>
+        Maths, algorithmique, Python, culture scientifique et projets courts.
+       </p>
+      </article>
+      <article class="card reveal" data-category="bachelor">
+       <span class="pill">
+        Post-bac
+       </span>
+       <h3>
+        Bachelor Informatique
+       </h3>
+       <p>
+        Web, bases de donn&eacute;es, algorithmique, syst&egrave;mes et r&eacute;seaux.
+       </p>
+      </article>
+      <article class="card reveal" data-category="bachelor">
+       <span class="pill">
+        Cyber
+       </span>
+       <h3>
+        Cybers&eacute;curit&eacute; &amp; R&eacute;seaux
+       </h3>
+       <p>
+        S&eacute;curit&eacute; offensive, cloud, infrastructure et premiers audits.
+       </p>
+      </article>
+      <article class="card reveal" data-category="ingenieur">
+       <span class="pill">
+        Majeure
+       </span>
+       <h3>
+        Data &amp; IA
+       </h3>
+       <p>
+        Machine learning, statistiques, Python avanc&eacute; et projets appliqu&eacute;s.
+       </p>
+      </article>
+      <article class="card reveal" data-category="ingenieur">
+       <span class="pill">
+        Majeure
+       </span>
+       <h3>
+        Logiciels &amp; SI
+       </h3>
+       <p>
+        Architecture logicielle, DevOps, qualit&eacute;, API et projets d&rsquo;&eacute;quipe.
+       </p>
+      </article>
+      <article class="card reveal" data-category="ingenieur">
+       <span class="pill">
+        Majeure
+       </span>
+       <h3>
+        S&eacute;curit&eacute; &amp; R&eacute;seaux
+       </h3>
+       <p>
+        Administration r&eacute;seau, pentest, cryptographie et cyberd&eacute;fense.
+       </p>
+      </article>
+      <article class="card reveal" data-category="metiers">
+       <span class="pill">
+        Carri&egrave;res
+       </span>
+       <h3>
+        D&eacute;bouch&eacute;s
+       </h3>
+       <p>
+        D&eacute;veloppeur full-stack, DevOps, data scientist, consultant SI.
+       </p>
+      </article>
+      <article class="card reveal" data-category="metiers">
+       <span class="pill">
+        Pro
+       </span>
+       <h3>
+        Stages &amp; alternance
+       </h3>
+       <p>
+        Professionnalisation avec projets, stages et entreprises.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="scheduleSection">
+    <div class="container">
+     <h2 class="section-title" id="scheduleTitle">
+      Exemple d&rsquo;emploi du temps &mdash; Tous les parcours
+     </h2>
+     <p class="section-lead" id="scheduleLead">
+      Clique sur une cat&eacute;gorie au-dessus : l&rsquo;emploi du temps se met &agrave; jour avec les cours et le nom des professeurs.
+     </p>
+     <div class="table-wrap schedule-wrap">
+      <table>
+       <thead>
+        <tr>
+         <th>
+          Heure
+         </th>
+         <th>
+          Lundi
+         </th>
+         <th>
+          Mardi
+         </th>
+         <th>
+          Mercredi
+         </th>
+         <th>
+          Jeudi
+         </th>
+         <th>
+          Vendredi
+         </th>
+        </tr>
+       </thead>
+       <tbody id="scheduleBody">
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </section>
+   <section class="outcomes-section" hidden="" id="outcomesSection">
+    <div class="container">
+     <span class="badge">
+      💼 D&eacute;bouch&eacute;s
+     </span>
+     <h2 class="section-title">
+      Entreprises partenaires &amp; m&eacute;tiers de l&rsquo;informatique
+     </h2>
+     <p class="section-lead">
+      Cette section remplace l&rsquo;emploi du temps pour montrer les opportunit&eacute;s professionnelles : entreprises, postes possibles et comp&eacute;tences attendues.
+     </p>
+     <div class="outcomes-grid">
+      <article class="card partner-card">
+       <h3>
+        Entreprises partenaires / recruteurs
+       </h3>
+       <p>
+        Les &eacute;tudiants peuvent viser des entreprises du num&eacute;rique, du conseil, de la cybers&eacute;curit&eacute;, du cloud et de la data.
+       </p>
+       <div class="logo-cloud">
+        <span>
+         Capgemini
+        </span>
+        <span>
+         Thales
+        </span>
+        <span>
+         Orange
+        </span>
+        <span>
+         Dassault Syst&egrave;mes
+        </span>
+        <span>
+         Sopra Steria
+        </span>
+        <span>
+         Atos
+        </span>
+        <span>
+         Microsoft
+        </span>
+        <span>
+         IBM
+        </span>
+       </div>
+      </article>
+      <article class="card jobs-card">
+       <h3>
+        M&eacute;tiers possibles
+       </h3>
+       <div class="job-list">
+        <div>
+         <strong>
+          D&eacute;veloppeur full-stack
+         </strong>
+         <small>
+          HTML/CSS, JavaScript, API, bases de donn&eacute;es
+         </small>
+        </div>
+        <div>
+         <strong>
+          Ing&eacute;nieur DevOps
+         </strong>
+         <small>
+          Docker, CI/CD, cloud, automatisation
+         </small>
+        </div>
+        <div>
+         <strong>
+          Data scientist
+         </strong>
+         <small>
+          Python, statistiques, IA, visualisation
+         </small>
+        </div>
+        <div>
+         <strong>
+          Consultant cybers&eacute;curit&eacute;
+         </strong>
+         <small>
+          Audit, pentest, r&eacute;seau, gestion des risques
+         </small>
+        </div>
+        <div>
+         <strong>
+          Chef de projet IT
+         </strong>
+         <small>
+          Agile, coordination, relation client
+         </small>
+        </div>
+        <div>
+         <strong>
+          Administrateur syst&egrave;mes &amp; r&eacute;seaux
+         </strong>
+         <small>
+          Linux, infrastructure, supervision
+         </small>
+        </div>
+       </div>
+      </article>
+     </div>
+     <div class="career-banner">
+      <div>
+       <h3>
+        Objectif professionnalisation
+       </h3>
+       <p>
+        Construire un portfolio, r&eacute;aliser des projets concrets, pr&eacute;parer les entretiens et rechercher une alternance ou un stage.
+       </p>
+      </div>
+      <a class="btn" href="contact.html">
+       Pr&eacute;parer ma candidature
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-grid">
+    <div>
+     <img alt="Logo EFREI" src="../assets/site_efrei_ameliore/assets/img/logo-efrei.svg" style="width:150px"/>
+     <p>
+      Site vitrine &eacute;tudiant du d&eacute;partement Informatique.
+     </p>
+    </div>
+    <div>
+     <h3>
+      Navigation
+     </h3>
+     <a href="index.html">
+      Accueil
+     </a>
+     <a href="formations.html">
+      Formations
+     </a>
+     <a href="enseignants.html">
+      Enseignants
+     </a>
+     <a href="vie-etudiante.html">
+      Vie &eacute;tudiante
+     </a>
+     <a href="evenements.html">
+      &Eacute;v&eacute;nements
+     </a>
+     <a href="contact.html">
+      Contact / &Agrave; propos
+     </a>
+    </div>
+    <div>
+     <h3>
+      Projet TI402
+     </h3>
+     <p>
+      HTML5, CSS3, JavaScript vanilla, responsive, tableaux, formulaires et animations.
+     </p>
+    </div>
+    <div>
+     <h3>
+      Où nous trouver
+     </h3>
+     <div class="social-links">
+      <a href="https://www.instagram.com/efrei_paris/" target="_blank" rel="noopener">
+       <span>📸</span> Instagram
+      </a>
+      <a href="https://discord.gg/92BqbX7Q" target="_blank" rel="noopener">
+       <span>💬</span> Discord
+      </a>
+      <a href="https://www.linkedin.com/school/efrei/?originalSubdomain=fr" target="_blank" rel="noopener">
+       <span>💼</span> LinkedIn
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="../js/main.js">
+  </script>
+ </body>
+</html>
